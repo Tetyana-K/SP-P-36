@@ -11,3 +11,4 @@ class Program
         Console.WriteLine($"Call C++ function sum(5, 70): {result}");
     }
 }
+
