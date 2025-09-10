@@ -1,17 +1,17 @@
-using HelloWF;
+п»їusing HelloWF;
 
 namespace WinFormsApp_Inherit
 {
-    public partial class Form2 : Form1 // успадкувалися від Form1 з іншого проекту HelloWF, попередньо додавши посилання на проект HelloWF (Dependencies -Add Project Reference ...)
+    public partial class Form2 : Form1 // СѓСЃРїР°РґРєСѓРІР°Р»РёСЃСЏ РІС–Рґ Form1 Р· С–РЅС€РѕРіРѕ РїСЂРѕРµРєС‚Сѓ HelloWF, РїРѕРїРµСЂРµРґРЅСЊРѕ РґРѕРґР°РІС€Рё РїРѕСЃРёР»Р°РЅРЅСЏ РЅР° РїСЂРѕРµРєС‚ HelloWF (Dependencies -Add Project Reference ...)
     {
         public Form2()
         {
             InitializeComponent();
             this.Text = "Form2";
-            this.button1.Text = "Form2 Button1"; // ця кнопка успадкована з Form1, змінюємо її властивості (напис на кнопці)
-            this.button2.BackColor = Color.Aqua; // ця кнопка теж успадкована з Form1, змінюємо її властивості (колір кнопки)
-            this.Controls[0].BackColor = Color.LightCoral; // змінюємо колір першого контролу на формі (це button1)
-            // Controls - це колекція всіх дочірніх контролів на формі, індексація з 0
+            this.button1.Text = "Form2 Button1"; // С†СЏ РєРЅРѕРїРєР° СѓСЃРїР°РґРєРѕРІР°РЅР° Р· Form1, Р·РјС–РЅСЋС”РјРѕ С—С— РІР»Р°СЃС‚РёРІРѕСЃС‚С– (РЅР°РїРёСЃ РЅР° РєРЅРѕРїС†С–)
+            this.button2.BackColor = Color.Aqua; // С†СЏ РєРЅРѕРїРєР° С‚РµР¶ СѓСЃРїР°РґРєРѕРІР°РЅР° Р· Form1, Р·РјС–РЅСЋС”РјРѕ С—С— РІР»Р°СЃС‚РёРІРѕСЃС‚С– (РєРѕР»С–СЂ РєРЅРѕРїРєРё)
+            this.Controls[0].BackColor = Color.LightCoral; // Р·РјС–РЅСЋС”РјРѕ РєРѕР»С–СЂ РїРµСЂС€РѕРіРѕ РєРѕРЅС‚СЂРѕР»Сѓ РЅР° С„РѕСЂРјС– (С†Рµ button1)
+            // Controls - С†Рµ РєРѕР»РµРєС†С–СЏ РІСЃС–С… РґРѕС‡С–СЂРЅС–С… РєРѕРЅС‚СЂРѕР»С–РІ РЅР° С„РѕСЂРјС–, С–РЅРґРµРєСЃР°С†С–СЏ Р· 0
         }
     }
 }
