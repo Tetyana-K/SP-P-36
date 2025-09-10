@@ -11,6 +11,7 @@ namespace WinFormsApp_Inherit
             this.button1.Text = "Form2 Button1"; // ця кнопка успадкована з Form1, змінюємо її властивості (напис на кнопці)
             this.button2.BackColor = Color.Aqua; // ця кнопка теж успадкована з Form1, змінюємо її властивості (колір кнопки)
             this.Controls[0].BackColor = Color.LightCoral; // змінюємо колір першого контролу на формі (це button1)
+            // Controls - це колекція всіх дочірніх контролів на формі, індексація з 0
         }
     }
 }
