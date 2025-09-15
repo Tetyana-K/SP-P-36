@@ -6,7 +6,7 @@ class Program
 {
     static void Main()
     {
-        // Знайдемо процес Notepad
+        // Знайдемо процеси Notepad
         Process[] processes = Process.GetProcessesByName("notepad");
 
         if (processes.Length == 0)

@@ -1,6 +1,29 @@
 ﻿using System;
 using System.Diagnostics;
 
+Process.Start("notepad"); // запускає Notepad
+Console.WriteLine("We have started Notepad");
+
+Process.Start("calc"); // запускає калькулятор
+
+//Process.Start(new ProcessStartInfo
+//{
+//    FileName = "https://msdn.com",
+////    FileName = "https://google.com", // відкриває URL у браузері за замовчуванням у новій вкладці
+//    UseShellExecute = true   // важливо для відкриття URL у браузері
+//});
+
+//Process.Start(new ProcessStartInfo
+//{
+
+//   FileName = "chrome.exe",
+//   // Arguments = "--new-window https://msdn.com", // відкриває нове вікно, а не вкладку
+//    UseShellExecute = true   // важливо для відкриття URL у браузері
+//});
+
+
+Process.Start("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "www.msdn.com");
+
 Console.WriteLine("Create process");
 string processName = "C:\\Users\\Ryzen\\source\\repos\\SP P-36\\MyProgramWuthExitCode\\bin\\Debug\\net8.0\\MyProgramWithExitCode.exe";// "calc.exe";
 
