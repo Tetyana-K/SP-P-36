@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Threads for array", "06_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads in WinForms", "Threads in WinForms\Threads in WinForms.csproj", "{E4716AA7-8631-4FEC-BC9E-1A88E8509645}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stop thread (WinForms)", "Stop thread (WinForms)\Stop thread (WinForms).csproj", "{9975845D-0CAC-479B-8ADF-17A810D626F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -301,6 +303,18 @@ Global
 		{E4716AA7-8631-4FEC-BC9E-1A88E8509645}.Release|x64.Build.0 = Release|Any CPU
 		{E4716AA7-8631-4FEC-BC9E-1A88E8509645}.Release|x86.ActiveCfg = Release|Any CPU
 		{E4716AA7-8631-4FEC-BC9E-1A88E8509645}.Release|x86.Build.0 = Release|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Debug|x64.Build.0 = Debug|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Debug|x86.Build.0 = Debug|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Release|x64.ActiveCfg = Release|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Release|x64.Build.0 = Release|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Release|x86.ActiveCfg = Release|Any CPU
+		{9975845D-0CAC-479B-8ADF-17A810D626F9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -326,6 +340,7 @@ Global
 		{6E4415B0-C995-480B-A082-B11D220040CE} = {D6D6AD59-036A-484B-9E1C-108AED316236}
 		{5904DA84-8D16-441B-8A4B-CB7842241286} = {D6D6AD59-036A-484B-9E1C-108AED316236}
 		{E4716AA7-8631-4FEC-BC9E-1A88E8509645} = {D6D6AD59-036A-484B-9E1C-108AED316236}
+		{9975845D-0CAC-479B-8ADF-17A810D626F9} = {D6D6AD59-036A-484B-9E1C-108AED316236}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA2E6251-EBF8-479B-9A74-48C836A25B99}
