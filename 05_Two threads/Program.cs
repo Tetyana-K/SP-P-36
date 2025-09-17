@@ -1,17 +1,20 @@
 ﻿int numThreads = 2;
-Thread [] threads = new Thread[numThreads];
+// створення масиву потоків
+Thread[] threads = new Thread[numThreads];
 
 char startLetter = 'A', endLetter = 'Z';
-int size = (endLetter - startLetter + 1) / numThreads;
+// розподіл діапазону букв між потоками
+int size = (endLetter - startLetter + 1) / numThreads; // кількість букв на потік
 for (int i = 0; i < numThreads; i++)
 {
-    char localStart = startLetter;
-    char localEnd = (char)(localStart + size);
-    threads[i] = new Thread(() => PrintLetters(localStart, localEnd));
-    startLetter = (char)(localEnd + 1);
+    char localStart = startLetter; // локальна копія початкової букви для потоку
+    char localEnd = (char)(localStart + size); // локальна копія кінцевої букви для потоку
+    // останній потік отримує всі залишкові букви
+    threads[i] = new Thread(() => PrintLetters(localStart, localEnd)); // використання лямбда-виразу для передачі параметрів у потік
+    startLetter = (char)(localEnd + 1); // оновлення початкової букви для наступного потоку
 }
 
-for (int i = 0; i < numThreads; i++)
+for (int i = 0; i < numThreads; i++) // запуск усіх потоків
 {
     threads[i].Start();
 }

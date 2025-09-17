@@ -1,5 +1,5 @@
 ﻿using System.Net.WebSockets;
-
+// приклад демонструє використання двох потоків для обчислення суми та добутку елементів масиву
 Console.Write("Input array size: ");
 int size = int.Parse(Console.ReadLine());
 int[] arr = Enumerable.Range(1, size).ToArray();
@@ -20,11 +20,13 @@ threadProduct.Start();
 threadProduct.Join();
 threadSum.Join();
 
+// Виводимо результати
+Console.ForegroundColor = ConsoleColor.Green;
 Console.WriteLine($"Sum = {sum}");
 Console.WriteLine($"Product = {product}");
 void SumArray(int[] arr)
 {
-    // int sum = 0; // можна через локальну змінну  зберігати  суму, але тоді й туту виводити
+    // int sum = 0; // можна через локальну змінну  зберігати  суму, але тоді й тут (у функції) виводити
     for (int i = 0; i < arr.Length; i++)
 	{
 		sum += arr[i];

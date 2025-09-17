@@ -1,6 +1,6 @@
 ﻿
 
-object obj = new object();
+object obj = new object(); // об'єкт для блокування
 
 // Перший потік (виводяться букви)
 ParameterizedThreadStart threadStart = new ParameterizedThreadStart(PrintLetters);
@@ -47,10 +47,8 @@ void PrintLetters(object end)
     {
         lock (obj) // Блокування для синхронізації доступу
         {
-            // Критична секція
-
+            // Критична секція = частина коду, яка виконується лише одним потоком одночасно
             Console.ForegroundColor = ConsoleColor.Blue;
-
             Console.WriteLine($"\t\t{c} in thread");
             Console.ResetColor();
         }
