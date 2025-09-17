@@ -33,6 +33,7 @@ namespace Threads_in_WinForms
         private void buttonStart_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
+            counter = 0;
             timer.Start(); // запуск таймера
             Thread thread = new Thread(PrintLetters); // створення нового потоку, який виконує метод PrintLetters
             thread.Start(); // запуск потоку
