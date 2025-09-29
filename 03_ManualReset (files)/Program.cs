@@ -10,6 +10,7 @@ Thread t2 = new Thread(() => SumNumbersInFile("numbers1.txt"));
 Thread t3 = new Thread(() => CounPositiveNumbersInFile("numbers1.txt"));
 Thread t4 = new Thread(() => PrintFile("numbers1.txt"));
 
+int[] arr = new int[10]; 
 
 t1.Start();
 t2.Start();

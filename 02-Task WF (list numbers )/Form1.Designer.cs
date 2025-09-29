@@ -1,4 +1,4 @@
-﻿namespace _00_Long_Operation_WF
+﻿namespace _02_Task_WF__list_numbers__
 {
     partial class Form1
     {
@@ -29,43 +29,43 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            progressBar1 = new ProgressBar();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(313, 103);
+            button1.Location = new Point(297, 81);
             button1.Name = "button1";
-            button1.Size = new Size(131, 60);
+            button1.Size = new Size(213, 71);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Start";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // progressBar1
+            // listBox1
             // 
-            progressBar1.Location = new Point(265, 238);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(249, 23);
-            progressBar1.TabIndex = 1;
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(297, 219);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(227, 184);
+            listBox1.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(progressBar1);
+            Controls.Add(listBox1);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
-            MouseMove += Form1_MouseMove;
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button button1;
-        private ProgressBar progressBar1;
+        private ListBox listBox1;
     }
 }
