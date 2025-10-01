@@ -25,6 +25,10 @@ Parallel.ForEach(arr, (num, state, index) =>
 });
 
 
+foreach (var item in results)
+{
+    Console.WriteLine("\t\t"+ item);
+}
 Console.WriteLine("\nDone!");
 
 long Square(int x) => x * x;    
