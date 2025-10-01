@@ -137,6 +137,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Concurrent Dictionary", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_Cancelation token", "12_Cancelation token\12_Cancelation token.csproj", "{7B551DFC-31F1-47D8-BBB3-7606F20022BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Parallel Invoke", "04_Parallel Invoke\04_Parallel Invoke.csproj", "{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -843,6 +845,18 @@ Global
 		{7B551DFC-31F1-47D8-BBB3-7606F20022BA}.Release|x64.Build.0 = Release|Any CPU
 		{7B551DFC-31F1-47D8-BBB3-7606F20022BA}.Release|x86.ActiveCfg = Release|Any CPU
 		{7B551DFC-31F1-47D8-BBB3-7606F20022BA}.Release|x86.Build.0 = Release|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Debug|x64.Build.0 = Debug|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Debug|x86.Build.0 = Debug|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Release|x64.ActiveCfg = Release|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Release|x64.Build.0 = Release|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Release|x86.ActiveCfg = Release|Any CPU
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -906,6 +920,7 @@ Global
 		{89398600-7F65-4A08-A44A-91BD1DFDB043} = {83087F37-E7BD-4A4A-A7B3-1D8606E3F5AF}
 		{C67130A2-6CDC-41D3-B803-68C0A10C2C8F} = {83087F37-E7BD-4A4A-A7B3-1D8606E3F5AF}
 		{7B551DFC-31F1-47D8-BBB3-7606F20022BA} = {3ED5CEAD-3AA7-4E0C-A5E4-2A5A803A8B52}
+		{1DA8AF75-19FE-4D69-8AD6-5EC877B24FA9} = {F537715D-63AA-4227-93B8-C258F0B93CA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA2E6251-EBF8-479B-9A74-48C836A25B99}

@@ -11,6 +11,7 @@ class Program
     {
         int[] numbers = new int[150]; // масив для збереження результатів (квадратів чисел)
 
+        long result = 1;
         //for (int i = 0; i < numbers.Length; i++)// послідовний цикл for для ініціалізації масиву
         //{
         //    numbers[i] = i * i; // ініціалізація масиву нулями
