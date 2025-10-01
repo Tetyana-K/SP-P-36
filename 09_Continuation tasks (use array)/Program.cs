@@ -11,13 +11,13 @@ Task taskGen = Task.Run(()=>
     Console.WriteLine("Array generated: " + string.Join(", ", arr));
 });
 
-Task < int[]> taskSort = taskGen.ContinueWith(prevTask =>
+Task <int[]> taskSort = taskGen.ContinueWith(prevTask =>
 {
-    int[] sorted = (int[])arr.Clone();
-    Array.Sort(sorted);
+    int[] sorted = (int[])arr.Clone(); // створюємо копію масиву для сортування
+    Array.Sort(sorted); // сортуємо копію масиву
     Console.WriteLine("Array sorted");
     //Console.WriteLine("Array sorted: " + string.Join(", ", sorted));
-    return sorted;
+    return sorted; // повертаємо відсортований масив як результат завдання
 });
 
 //Task taskPrint = taskSort.ContinueWith(prevTask => // lambda

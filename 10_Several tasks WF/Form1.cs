@@ -7,7 +7,8 @@ namespace _10_Several_tasks_WF
         public Form1()
         {
             InitializeComponent();
-            textBox1.ReadOnly = true;
+            textBox1.ReadOnly = true; // Робимо textBox1 лише для читання
+            textBox1.Multiline = true; // Дозволяємо багаторядковий ввід у textBox1
         }
 
         private async void btnStart_Click(object sender, EventArgs e)
@@ -19,13 +20,13 @@ namespace _10_Several_tasks_WF
             await Task.WhenAll(taskLen, taskWordCount, taskLines); // Очікуємо завершення усіх завдань
             
             textBox1.Text = $"Length: {taskLen.Result}\r\nWord count: {taskWordCount.Result}";
-            textBox1.AppendText($"\r\nLines: {taskLines.Result}\r\n");
+            textBox1.AppendText($"\r\nLines: {taskLines.Result}\r\n"); 
         }
        
 
         private int CountWords(string text)
         {
-            return text.Split(", !?-:;.\t\n".ToCharArray()).Length;
+            return text.Split(", !?-:;.\t\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries).Length;
         }
     }
 }
